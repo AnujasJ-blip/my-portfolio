@@ -2,11 +2,20 @@ import './App.css'
 import ProjectCard from './components/ProjectCard'
 
 function App() {
+  const skills =["Python", "Java", "C", "React", "Simulink", "SQL"];
+
   return (
     <div className="portfolio" style={{maxWidth: "800px", margin: "0 auto", padding: "20px"}}>
       <header>
-        <h1>Anujas's Portfolio</h1>
+        <h1>Anuja's Portfolio</h1>
         <p>Computer Science Student | ML & Robotics Enthusiast</p>
+
+        {/*Skills*/}
+        <div className='skills-bar'>
+          {skills.map(skill => (
+            <span key={skill} className='skill-badge'>{skill}</span>
+          ))}
+        </div>
       </header>
 
       <main>
