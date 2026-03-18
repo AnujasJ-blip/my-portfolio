@@ -40,6 +40,18 @@ function App() {
           </div>
         </section>
       </main>
+
+      <footer className='footer'>
+          <h2>Get in Touch</h2>
+          <p>Currently studying Computer Science and open to collaboration</p>
+          <div className='contact-links'>
+            <a href="https://github.com/AnujasJ-blip" target="_blank" rel='noreferrer'>GitHub</a>
+            <a href='mailto:anujawork8@gmail.com'>Email</a>
+            <a href='#'>LinkedIn</a>
+          </div>
+          <p className='copyright'>© 2026 Anuja. Built with React + Vite.</p>
+      </footer>
+
     </div>
   )
 }
