@@ -1,15 +1,26 @@
 import { FaPython, FaJava, FaReact, FaGithub } from 'react-icons/fa';
-import { SiCplusplus, SiSimulink, SiScikitlearn } from 'react-icons/si';
-import { MdEmail } from 'react-icons/md';
+
+import { useState, useEffect } from 'react';
+import { IoMdMoon, IoMdSunny } from 'react-icons/io';
 import './App.css'
 import ProjectCard from './components/ProjectCard'
 
 function App() {
-  const skills =["Python", "Java", "C", "React", "Simulink", "SQL"];
+  const skills =["Python", "Java", "React", "Simulink", "SQL"];
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.body.className = darkMode? 'dark-theme' : 'light-theme';
+  }, [darkMode]);
+
+  const toggleTheme = () => setDarkMode(!darkMode);
 
   return (
     <div className="portfolio" style={{maxWidth: "800px", margin: "0 auto", padding: "20px"}}>
       <header>
+        <button onClick={toggleTheme} className='theme-toggle'>
+          {darkMode ? <IoMdSunny /> : <IoMdMoon/>}
+        </button>
         <h1>Anuja's Portfolio</h1>
         <p>Computer Science Student | ML & Robotics Enthusiast</p>
 
@@ -18,7 +29,6 @@ function App() {
           <span className="skill-badge"><FaPython /> Python</span>
           <span className="skill-badge"><FaJava /> Java</span>
           <span className="skill-badge"><FaReact /> React</span>
-          <span className="skill-badge"><SiSimulink /> Simulink</span>
         </div>
       </header>
 
