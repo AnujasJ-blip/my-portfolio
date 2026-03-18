@@ -1,3 +1,6 @@
+import { FaPython, FaJava, FaReact, FaGithub } from 'react-icons/fa';
+import { SiCplusplus, SiSimulink, SiScikitlearn } from 'react-icons/si';
+import { MdEmail } from 'react-icons/md';
 import './App.css'
 import ProjectCard from './components/ProjectCard'
 
@@ -12,9 +15,10 @@ function App() {
 
         {/*Skills*/}
         <div className='skills-bar'>
-          {skills.map(skill => (
-            <span key={skill} className='skill-badge'>{skill}</span>
-          ))}
+          <span className="skill-badge"><FaPython /> Python</span>
+          <span className="skill-badge"><FaJava /> Java</span>
+          <span className="skill-badge"><FaReact /> React</span>
+          <span className="skill-badge"><SiSimulink /> Simulink</span>
         </div>
       </header>
 
