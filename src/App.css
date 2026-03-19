@@ -18,6 +18,50 @@ header h1{
   color: #646cff;
   margin-bottom: 20px;
 }
+.main-header{
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 1px solid var(--border-color);
+  margin-bottom: 40px;
+}
+.header-top{
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header-content h1{
+  font-size: 3.5rem;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #646cff, #a2a7ff);
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+.subtitle{
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.focus-areas{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.focus-tag{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+.skill-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /*Grid*/
 .project-grid{
   display: grid;

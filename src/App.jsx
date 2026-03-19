@@ -17,12 +17,22 @@ function App() {
 
   return (
     <div className="portfolio" style={{maxWidth: "800px", margin: "0 auto", padding: "20px"}}>
-      <header>
-        <button onClick={toggleTheme} className='theme-toggle'>
-          {darkMode ? <IoMdSunny /> : <IoMdMoon/>}
-        </button>
-        <h1>Anuja's Portfolio</h1>
-        <p>Computer Science Student | ML & Robotics Enthusiast</p>
+      <header className='main-header'>
+        <div className='header-top'>
+          <button onClick={toggleTheme} className='theme-toggle'>
+            {darkMode ? <IoMdSunny /> : <IoMdMoon/>}
+          </button>
+        </div>
+
+        <div className='header-content'>
+          <h1>Anuja's Portfolio</h1>
+          <p className='subtitle'>Computer Science Student | ML & Robotics Enthusiast</p>
+          <div className='focus-areas'>
+            <span className='focus-tag'>Machine Learning</span>
+            <span className='focus-tag'>Robotics</span>
+            <span className='focus-tag'>Data Analysis</span>
+          </div>
+        </div>
 
         {/*Skills*/}
         <div className='skills-bar'>
