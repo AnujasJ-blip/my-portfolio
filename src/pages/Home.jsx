@@ -9,7 +9,7 @@ const Home = () => {
 
       <div className='hero-btns'>
         <a href="#contact" className='btn-primary'>Contact Me</a>
-        <a href="/cv.pdf" download="Anuja_CV.pdf" target="_blank" rel="noopener noreferrer" className='btn-secondary'>Download CV</a>
+        <a href={`${import.meta.env.BASE_URL}cv.pdf`} download="Anuja_CV.pdf" target="_blank" rel="noopener noreferrer" className='btn-secondary'>Download CV</a>
       </div>
     </header>
   );
