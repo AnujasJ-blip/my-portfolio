@@ -33,7 +33,7 @@ const Contact = () => {
               <p>github.com/AnujasJ-blip</p>
             </div>
           </a>
-          <a href="#" target="_blank" rel="noreferrer" className="contact-card">
+          <a href="https://www.linkedin.com/in/anuja-j-529b27334/" target="_blank" rel="noreferrer" className="contact-card">
             <div className="contact-icon"><FaLinkedin /></div>
             <div className="contact-details">
               <h4>LinkedIn</h4>
